@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    
+    <!--Bootstrap normalize-->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- <link href="css/reset.css" rel="stylesheet" />-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- font awesome icon css-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="main" class="fullscreen background parallax main" style="background-image:url('http://images8.alphacoders.com/374/374665.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <div class="content-a">
+            <div class="content-b row">                
+                <h1>Hello! I am Ebin</h1>
+                <div class="row statement">
+                    <div class="animated fadeInLeftBig" style="font-size: 78px;">DEVELOPER</div>                    
+                    <div class="animated fadeInRightBig" style="font-size: 78px;">DESIGNER</div>
+                    <div class="animated fadeInUp" style="font-size: 78px;">Here is what you need!</div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!--navbar -->
+    <div class="navbar navbar-inverse navbar-static-top" id="nav">
+        <div class="container">
+            <a href="#main" id="main-scroll" class="navbar-brand"><i class="fa fa-home"></i>Home</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="icon-bar">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times" style="display: none;"></i> 
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#profile"><i class="fa fa-user"></i> Profile</a></li>
+                    <li><a href="#works"><i class="fa fa-gavel"></i> Works</a></li>
+                    <li><a href="#services"><i class="fa fa-laptop"></i> Services</a></li>
+                    <li><a href="#github"><i class="fa fa-github"></i> Github</a></li>
+                    <li><a href="#contact"><i class="fa fa-phone"></i> Contact Me</a></li>
+                </ul>
+            </div><!--EO nav-collapse -->
+        </div><!--EO container -->
+    </div><!--EO navbar -->
+    
+    <div id="profile" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <!--profile content-->      
+    </div>
+
+    <div id="works" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <?php include_once "includes/works.php"; ?>
+    </div>
+
+    <div id="services" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <?php include_once "includes/services.php"; ?>
+    </div>
+
+    <div id="github" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
+        <?php include_once "includes/github.php"; ?>
+    </div>
+
+    <div id="contact" class="fullscreen background parallax">
+        <?php include_once "includes/contact.php"; ?>
+    </div>
+
+    <!--<div id="works" class="not-fullscreen background parallax" style="background-image:url('http://www.minimit.com/images/picjumbo.com_IMG_6643.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">      
+        <div class="content-a">
+            <div class="content-b">
+               <h1>Test</h1>
+            </div>
+        </div>
+    </div>-->
+
+    <!--Java Script-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--EO JavaScript-->
+
+    <script>
+    $(function () {
+        $("#profile").load("includes/profile.html");
+        $("#works").load("includes/works.html");
+        $("#services").load("includes/services.html");
+        $("#github").load("includes/github.html");
+        $("contact").load("includes/contact.html");
+    });
+    </script>
+    
+</body> <!--EO body-->
+
+</html>
+ 
