@@ -62,6 +62,7 @@
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="images\Thumbs.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,7 +78,19 @@
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="bootstrap-3.2.0-dist\js\bootstrap.js" />
     <Content Include="bootstrap-3.2.0-dist\js\bootstrap.min.js" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\cute-blur-wallpaper-26341-27032-hd-wallpapers.jpg" />
+    <Content Include="includes\contact.html" />
+    <Content Include="includes\github.html" />
+    <Content Include="includes\profile.html" />
+    <Content Include="includes\services.html" />
+    <Content Include="includes\works.html" />
     <Content Include="index.html" />
+    <Content Include="js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
