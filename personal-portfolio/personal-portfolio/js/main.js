@@ -1,4 +1,14 @@
-﻿/**-------------------------------------------------- Parallax Effect----------------------------**/
+﻿//includes
+$(function () {
+    $("#profile").load("includes/profile.html");
+    $("#works").load("includes/works.html");
+    $("#services").load("includes/services.html");
+    $("#github").load("includes/github.html");
+    $("contact").load("includes/contact.html");
+});
+
+
+/**-------------------------------------------------- Parallax Effect----------------------------**/
 /* detect touch */
 if ("ontouchstart" in window) {
     document.documentElement.className = document.documentElement.className + " touch";
@@ -108,6 +118,10 @@ $('#nav').affix({
     }
 });
 
+/***********************************************EO   Nav Bar ****************************************/
+
+/************************************************** smooth scroll ***********************************/
+
 //highlight the top nav as scrolling occurs 
 $('body').scrollspy({ target: '#nav' })
 
@@ -123,7 +137,20 @@ $('#nav .navbar-nav li>a').click(function () {
     $('body,html').animate({ scrollTop: posi }, 700);
 });
 
-/***********************************************EO   Nav Bar ****************************************/
+$("#scroll_profile").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#profile").offset().top
+    },
+        'slow');
+});
+
+$("#main-scroll").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#main").offset().top
+    },
+        'slow');
+});
+/***********************************************EO   smooth scroll***********************************/
 
 //icon bar
 $(document).ready(function () {

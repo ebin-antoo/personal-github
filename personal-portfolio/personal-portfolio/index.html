@@ -8,7 +8,7 @@
     
     <!--Bootstrap normalize-->
     <link href="css/normalize.css" rel="stylesheet" />
-    <!-- <link href="css/reset.css" rel="stylesheet" />-->
+    <!-- <link href="css/reset.css" rel="stylesheet" /> -->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -25,11 +25,12 @@
     <div id="main" class="fullscreen background parallax main" style="background-image:url('http://images8.alphacoders.com/374/374665.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">
         <div class="content-a container">
             <div class="content-b row">                
-                <div class="col-md-12"><h1>Hello! I am Ebin</h1></div>
+                <div class="col-md-12 col-xs-12"><h1>Hello! I am Ebin</h1></div>
                 <div class="row statement">
-                    <div class="animated fadeInLeftBig" style="font-size: 78px;">DEVELOPER</div>                    
-                    <div class="animated fadeInRightBig" style="font-size: 78px;">DESIGNER</div>
-                    <div class="animated fadeInUp" style="font-size: 78px;">Here is what you need!</div>
+                    <div class="animated fadeInLeftBig" style="font-size: 1.5em;">DEVELOPER</div>                    
+                    <div class="animated fadeInRightBig" style="font-size: 1.5em;">DESIGNER</div>
+                    <div class="animated fadeInUp" style="font-size: 1.5em;">Here is what you need!</div>
+                    <div><a id="scroll_profile" style="cursor:pointer;"><i class="fa fa-chevron-circle-down fa-5x"></i></a></div>
                 </div>
             </div>            
         </div>
@@ -38,7 +39,7 @@
     <!--navbar -->
     <div class="navbar navbar-inverse navbar-static-top" id="nav">
         <div class="container">
-            <a href="#main" id="main-scroll" class="navbar-brand"><i class="fa fa-home"></i>Home</a>
+            <a id="main-scroll" class="navbar-brand" style="cursor:pointer;"><i class="fa fa-home"></i>Home</a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" id="icon-bar">
                     <i class="fa fa-bars"></i>
@@ -58,24 +59,24 @@
         </div><!--EO container -->
     </div><!--EO navbar -->
     
-    <div id="profile" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <!--profile content-->      
+    <div id="profile" class="fullscreen background parallax" style="background-image:url('http://www.minimit.com/images/picjumbo.com_IMG_6643.jpg'); data-img-width=" 1600" data-img-height="1064" data-diff="100">
+        <!--profile content-->
     </div>
 
-    <div id="works" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <?php include_once "includes/works.php"; ?>
+    <div id="works" class="fullscreen background parallax" style="background-image:url('http://images8.alphacoders.com/374/374665.jpg'); data-img-width=" 1600" data-img-height="1064" data-diff="100">
+        <!--works content-->
     </div>
 
     <div id="services" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <?php include_once "includes/services.php"; ?>
+        <!--services content-->
     </div>
 
     <div id="github" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-        <?php include_once "includes/github.php"; ?>
+        <!--github content-->
     </div>
 
     <div id="contact" class="fullscreen background parallax">
-        <?php include_once "includes/contact.php"; ?>
+        <!--contact content-->
     </div>
 
     <!--<div id="works" class="not-fullscreen background parallax" style="background-image:url('http://www.minimit.com/images/picjumbo.com_IMG_6643.jpg');" data-img-width="1600" data-img-height="1064" data-diff="100">      
@@ -86,6 +87,13 @@
         </div>
     </div>-->
 
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <span>EBIN ANTOO    |   copyright &copy; 2014 All right reserved</span>
+        </div>
+    </nav>
+
+
     <!--Java Script-->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -93,16 +101,43 @@
     <script src="js/main.js"></script>
     <!--EO JavaScript-->
 
-    <script>
-    $(function () {
-        $("#profile").load("includes/profile.html");
-        $("#works").load("includes/works.html");
-        $("#services").load("includes/services.html");
-        $("#github").load("includes/github.html");
-        $("contact").load("includes/contact.html");
-    });
-    </script>
-    
+    <style type="text/css">
+      /* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) 
+    {
+        div#nav.navbar,.collapse 
+        {
+            background: black;
+        }		
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+        div#nav.navbar,.collapse 
+        {
+            background: black;
+        }
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+        div#nav.navbar,.collapse 
+        {
+            background: black;
+        }
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+
+	}
+
+    </style>
 </body> <!--EO body-->
 
 </html>
