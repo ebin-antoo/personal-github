@@ -72,3 +72,32 @@ button#icon-bar
     background: none;
 }
 /*-----------------------------------------EO-- Navigation --------------------------------------------------*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    div#nav.navbar, .collapse {
+        background: black;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    div#nav.navbar, .collapse {
+        background: black;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    div#nav.navbar, .collapse {
+        background: black;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

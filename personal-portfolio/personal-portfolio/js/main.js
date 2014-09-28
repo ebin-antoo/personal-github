@@ -144,7 +144,7 @@ $("#scroll_profile").click(function () {
         'slow');
 });
 
-$("#main-scroll").click(function () {
+$("#scroll-top, #push-top").click(function () {
     $('html,body').animate({
         scrollTop: $("#main").offset().top
     },
