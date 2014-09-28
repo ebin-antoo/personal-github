@@ -4,7 +4,7 @@ $(function () {
     $("#works").load("includes/works.html");
     $("#services").load("includes/services.html");
     $("#github").load("includes/github.html");
-    $("contact").load("includes/contact.html");
+    $("#contact").load("includes/contact.html");
 });
 
 

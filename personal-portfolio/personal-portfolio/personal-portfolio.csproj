@@ -62,9 +62,16 @@
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap-3.2.0-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\font-awesome.css" />
     <Content Include="ico\favicon.ico" />
+    <Content Include="images\ticks_%402X.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\bio2.jpg" />
+    <Content Include="images\code.jpg" />
     <Content Include="images\e-logo.png" />
     <Content Include="images\photodune-6980460-fully-responsive-web-design-in-electronic-devices-l1.jpg" />
+    <Content Include="images\Responsive-Web-Design2.png" />
     <Content Include="images\Responsive_Web_Design.png" />
     <Content Include="images\Thumbs.db" />
     <None Include="Web.Debug.config">
@@ -88,12 +95,14 @@
     <Content Include="css\reset.css" />
     <Content Include="images\ajax-loader.gif" />
     <Content Include="images\cute-blur-wallpaper-26341-27032-hd-wallpapers.jpg" />
+    <Content Include="images\water-splash-wallpaper-3532-3719-hd-wallpapers.jpg" />
     <Content Include="includes\contact.html" />
     <Content Include="includes\github.html" />
     <Content Include="includes\profile.html" />
     <Content Include="includes\services.html" />
     <Content Include="includes\works.html" />
     <Content Include="index.html" />
+    <Content Include="js\jquery-1.11.1.min.js" />
     <Content Include="js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
