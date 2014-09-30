@@ -1,50 +1,56 @@
 ﻿<div class="container">
     <div class="row" style="padding-top:4em;">
         <h1 style="text-align:center;"><strong>C</strong>ontact Us</h1>
-        <div style="text-align:center;">
+        <div style="text-align:center">
             Want to start a project or just say Hi? We love to engage in small talk, so why not drop us a note. We'll get back to you.
-            <form>
-                <table width="400" border="0" cellspacing="2" cellpadding="0">
-                    <tr>
-                        <td width="29%" class="bodytext">Your name:</td>
-                        <td width="71%"><input name="name" type="text" id="name" size="32"></td>
-                    </tr>
-                    <tr>
-                        <td class="bodytext">Email address:</td>
-                        <td><input name="email" type="text" id="email" size="32"></td>
-                    </tr>
-                    <tr>
-                        <td class="bodytext">Comment:</td>
-                        <td><textarea name="comment" cols="45" rows="6" id="comment" class="bodytext"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td class="bodytext"> </td>
-                        <td align="left" valign="top"><input type="submit" name="Submit" value="Send"></td>
-                    </tr>
-                </table>
-            </form>
+        </div>
 
-            <div id="social-bar">
-                <h1 style="text-align:center;">Get Connected</h1>
-                <a href="https://www.facebook.com/ebin.antoo">
-                    <i class="fa fa-facebook"></i>
-                    <span>Facebook</span>
-                </a>
-                &nbsp;
-                <a href="https://twitter.com/EbinAntoo">
-                    <i class="fa fa-twitter"></i>
-                    <span>Twitter</span>
-                </a>
-                &nbsp;
-                <a href="https://www.google.com/+EbinAntoo">
-                    <i class="fa fa-google-plus"></i>
-                    <span>Google Plus</span>
-                </a>
+        <form role="form">
+
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="inputname" placeholder="Enter Name" maxlength="35">
             </div>
 
-            <div>&nbsp;</div>
+            <div class="form-group">
+                <label for="Email1">Email address</label>
+                <input type="email" class="form-control" id="inputemail" placeholder="Enter email" maxlength="35">
+            </div>
 
-            <iframe width="600" height="450" frameborder="0" style="border:0"
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <input type="text" class="form-control" id="inputmessage" placeholder="Enter Message" maxlength="150" style="height:10em;">
+            </div>
+
+            <button type="submit" class="btn btn-default">Send</button>
+        </form>
+
+        <div id="social-bar" style="text-align:center; font-size:2em; padding-bottom:1em;">
+            <h1 style="text-align:center;"><strong>G</strong>et Connected</h1>
+            <a href="https://www.facebook.com/ebin.antoo">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            &nbsp;
+            <a href="https://twitter.com/EbinAntoo">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            &nbsp;
+            <a href="https://www.google.com/+EbinAntoo">
+                <i class="fa fa-google-plus"></i>
+                <span>Google Plus</span>
+            </a>
+            &nbsp;
+            <a href="http://www.youtube.com/channel/UCTtO_5iO7IKuk926qtgisfw">
+                <i class="fa fa-youtube"></i>
+                <span>You Tube</span>
+            </a>
+        </div>
+
+        <div class="embed-responsive embed-responsive-4by3" style="padding-top:2em;">
+
+            <iframe class="embed-responsive-item" align="middle" width="600" height="450" frameborder="0" style="border:0"
                     src="https://www.google.com/maps/embed/v1/place?q=253+Johnson+Street,+Barrie,+ON,+Canada&key=AIzaSyDwtrFvwGbYi1y9XRz7EQnyJ-GrnQX2Mw8"></iframe>
         </div>
     </div>
